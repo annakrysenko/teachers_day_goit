@@ -1,0 +1,244 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+.krysenko-section {
+  width: 100vw;
+  height: 100vh;
+
+  position: relative;
+
+  /* background-color: #0093e9; */
+  background: rgb(64, 185, 255);
+  background: linear-gradient(
+    288deg,
+    rgba(64, 185, 255, 1) 10%,
+    rgba(0, 75, 119, 1) 100%
+  );
+}
+
+/* ========================= marquee  ========================= */
+.krysenko_marquee_top,
+.krysenko_marquee_bottom {
+  color: #04306a;
+  background-color: #f5f8b0;
+  font-family: 'Amatic SC', cursive;
+  font-size: 2vh;
+  font-weight: 700;
+  word-spacing: 45px;
+  width: 100%;
+  letter-spacing: 1rem;
+
+  padding: 5px 0;
+}
+
+.krysenko_marquee_top {
+  position: absolute;
+  top: 0;
+}
+
+.krysenko_marquee_bottom {
+  position: absolute;
+  bottom: 0;
+}
+
+/* ======================================================= */
+
+.krysenko-container {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+
+  color: white;
+
+  font-family: 'Ubuntu Condensed', sans-serif;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 20px;
+
+  padding: 4vh 4vw;
+}
+
+/* ============= left-side =============== */
+
+.krysenko-left-side {
+  padding: 20px;
+  line-height: 1.3;
+  letter-spacing: 0.03em;
+  background-image: url('./images/girl.png');
+  background-size: 180px;
+  background-repeat: no-repeat;
+  background-position: top 60px right 20px;
+}
+
+.krysenko-title {
+  font-family: 'Amatic SC', cursive;
+  font-size: 32px;
+  font-weight: 700;
+
+  margin-bottom: 40px;
+
+  color: #f5f8b0;
+}
+
+.krysenko-subtitle {
+  font-size: 24px;
+  margin-bottom: 100px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.krysenko-thanks {
+  padding: 15px;
+  background-image: linear-gradient(0deg, #ffffff30 50%, #ffffff30 100%);
+  border-radius: 15px;
+}
+
+.krysenko-text {
+  margin-bottom: 20px;
+  font-size: 18px;
+
+  color: #f5f8b0;
+}
+
+.krysenko-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.krysenko-list-item {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.krysenko-list-item:nth-child(1):before {
+  content: '\1F525';
+}
+
+.krysenko-list-item:nth-child(2):before {
+  content: '\1F4AA';
+}
+
+.krysenko-list-item:nth-child(3):before {
+  content: '\1F60C';
+}
+/* ==============right side================== */
+
+.krysenko-right-side {
+  padding: 20px;
+}
+
+.krysenko-mentors-list {
+  background-image: linear-gradient(0deg, #ffffff30 50%, #ffffff30 100%);
+  border-radius: 15px;
+  display: flex;
+  column-gap: 70px;
+  max-width: 50vw;
+  padding: 15px;
+}
+
+.krysenko-wrapper {
+  position: relative;
+}
+
+.krysenko-mentors-list-item:hover,
+.krysenko-mentors-list-item:focus {
+  transform: scale(1.7);
+  transition-duration: 500ms;
+  box-shadow: rgb(0, 53, 61) 0px 20px 50px -10px;
+}
+
+.krysenko-mentor-discrip {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+
+  z-index: 2;
+
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  height: 16%;
+  background-color: #f6f8b08a;
+  color: #3486f2;
+  text-align: center;
+
+  font-family: 'Amatic SC', cursive;
+}
+
+.krysenko-mentor-about {
+  background-color: #f6f8b0;
+  color: #3486f2;
+  display: none;
+  text-align: center;
+}
+
+.krysenko-about-item {
+  font-size: 10px;
+}
+
+.kysenko-about-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.krysenko-mentors-list-item:hover,
+.krysenko-mentors-list-item:focus {
+  transform: scale(1.7);
+  transition-duration: 500ms;
+}
+
+.krysenko-mentors-list-item:hover .krysenko-mentor-discrip,
+.krysenko-mentors-list-item:focus .krysenko-mentor-discrip {
+  display: none;
+}
+
+.krysenko-mentors-list-item:hover .krysenko-mentor-about,
+.krysenko-mentors-list-item:focus .krysenko-mentor-about {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+}
